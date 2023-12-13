@@ -89,7 +89,9 @@ const Agenda = () => {
                     />
                   ))}
                 </div>
+            <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">add</i></a>
             </div>
+        
         </div>
     );
 };

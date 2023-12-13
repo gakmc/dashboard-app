@@ -44,13 +44,13 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
-                                    <a class="nav-link btn btn-outline-primary" href="{{ route('login') }}">{{ __('Ingresar') }}</a>
+                                    <a class="nav-link btn blue" href="{{ route('login') }}">{{ __('Ingresar') }}</a>
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Registrar') }}</a>
+                                    <a class="nav-link btn blue" href="{{ route('register') }}">{{ __('Registrar') }}</a>
                                 </li>
                             @endif
                         @else
@@ -84,5 +84,8 @@
     </div>
 
     @yield('script')
+    <script>  document.addEventListener('DOMContentLoaded', function() {
+        M.AutoInit();
+      });</script>
 </body>
 </html>
